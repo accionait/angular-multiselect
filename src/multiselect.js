@@ -120,11 +120,6 @@ angular.module('ui.multiselect', [])
           element.append($compile(popUpEl)(scope));
 
           function getHeaderText() {
-            console.log("modelCtrl.$modelValue");
-            console.log(modelCtrl.$modelValue);
-            console.log(originalScope);
-            console.log(modelCtrl);
-            console.log(attrs);
             if (is_empty(modelCtrl.$modelValue)) 
             {
                 return scope.header = attrs.msHeader || 'Select';
