@@ -144,7 +144,7 @@ angular.module('ui.multiselect', [])
                     } 
                     else 
                     {
-                        scope.header = modelCtrl.$modelValue.length + ' ' + 'selected';
+                        scope.header = modelCtrl.$modelValue.length + ' ' + (attrs.msSelectedHeader || 'selected');
                     }
                 }
             } 
